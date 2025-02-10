@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://ba0prm8idarha"]
+
+[ext_resource type="Script" path="res://text_box.gd" id="1_nvdun"]
+[ext_resource type="PackedScene" uid="uid://desnyld1fcsbg" path="res://script.tscn" id="2_1r3ne"]
+
+[node name="TextBox" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 342.0
+offset_top = 327.0
+offset_right = -363.0
+offset_bottom = -267.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nvdun")
+
+[node name="BackgroundLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="BackgroundLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="BackgroundLayer"]
+
+[node name="TextLayer" type="CanvasLayer" parent="."]
+
+[node name="CanvasModulate" type="CanvasModulate" parent="TextLayer"]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextLayer"]
+offset_right = 1.0
+
+[node name="Scripts" type="Node" parent="."]
+
+[node name="Script_1" parent="Scripts" instance=ExtResource("2_1r3ne")]
+dialogues = Array[String](["Test Test Test Test测试1", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test 测试2", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", "Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test", ""])
