@@ -1,6 +1,5 @@
 extends Control
 
-@export var font: FontFile = preload("res://assets/font/SourceHanSansCN-ExtraLight.otf")
 @export var normal_font_size: int = 40
 @export var font_color: Color = Color.WHITE
 @export var background_color: Color = Color.BLACK
@@ -17,9 +16,13 @@ var dialogue_list_num = 0
 func _ready() -> void:
 	$BackgroundLayer/CanvasModulate.color = background_color
 	$TextLayer/CanvasModulate.color = Color.WHITE
+	$TextLayer/RichTextLabel.add_theme_font_size_override("bold_font_size", normal_font_size)
+	$TextLayer/RichTextLabel.add_theme_font_size_override("bold_italics_font_size", normal_font_size)
+	$TextLayer/RichTextLabel.add_theme_font_size_override("italics_font_size", normal_font_size)
+	$TextLayer/RichTextLabel.add_theme_font_size_override("mono_font_size", normal_font_size)
 	$TextLayer/RichTextLabel.add_theme_font_size_override("normal_font_size", normal_font_size)
 	$TextLayer/RichTextLabel.add_theme_color_override("default_color", font_color)
-	$TextLayer/RichTextLabel.add_theme_font_override("normal_font", font)
+	
 	scripts = $Scripts.get_children()
 	scripts_num = len(scripts)
 	print("已加载 ", scripts_num," 个剧本")

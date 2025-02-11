@@ -19,3 +19,6 @@
 - 文本推进的方式默认是引擎自带的键位映射“ui-accept”，可以在 text_box.gd 中的 _unhandled_input() 函数中自行修改。
 - 在最开始，第一个 Script 还没有被加载，需要多按一次键加载它。而在实际应用中，可以先使用 text_box.gd 中的 add_script() 函数手动添加 Script，这样就不用多按一次键了。
 
+## 25-02-11
+
+去掉了在 TextBox 中设置字体的功能。字体可以直接在 RichTextLabel 中设置，这样更灵活。

@@ -1,3 +1,3 @@
 extends Node
 
-@export var dialogues: Array[String]
+@export_multiline var dialogues: Array[String]
