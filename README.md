@@ -1,4 +1,4 @@
-# Lumia Text Box
+# Lumia Text Box（已停止更新，不推荐使用）
 
 这是一个 Godot 工程，使用的 Godot 版本为 v4.3 。
 
